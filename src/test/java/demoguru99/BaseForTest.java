@@ -29,10 +29,10 @@ public class BaseForTest {
 
     @BeforeMethod
     public void goToWebsiteTelecom() {
-        getDriver();
+        //getDriver();
         driver.manage().window().maximize();
 
-        File file = new File("src/test/resources/local.properties");
+        /*File file = new File("src/test/resources/local.properties");
 
         FileInputStream fileInput = null;
         try {
@@ -47,9 +47,9 @@ public class BaseForTest {
             prop.load(fileInput);
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
-        driver.get(prop.getProperty("URL"));
+        driver.get("http://demo.guru99.com/telecom/index.html");
     }
 
     @AfterTest

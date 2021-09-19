@@ -37,7 +37,7 @@ public class AddCustomerPage extends BaseModel {
         inputLastName.sendKeys(lastName);
         inputEmail.sendKeys(email);
         inputMessage.sendKeys(message);
-        Thread.sleep(500);
+        Thread.sleep(900);
         inputTelePhoneNo.sendKeys(telePhone);
 
         return new AddCustomerPage(getDriver());
