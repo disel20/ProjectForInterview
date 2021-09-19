@@ -1,11 +1,8 @@
 package demoguru99.model;
 
-import demoguru99.TestUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 public class AddTariffPlanToCustomerPage extends BaseModel {
@@ -31,11 +28,6 @@ public class AddTariffPlanToCustomerPage extends BaseModel {
     }
 
     public AddTariffPlanToCustomerPage selectTariffPlan() {
-        /*Actions builder = new Actions(getDriver());
-        builder.keyDown(Keys.CONTROL)
-                .moveByOffset( -3, -3 )
-                .clickAndHold(selectTariffPlan)
-                .build().perform();*/
         selectTariffPlan.click();
         return new AddTariffPlanToCustomerPage(getDriver());
     }
