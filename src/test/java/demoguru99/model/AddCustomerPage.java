@@ -32,12 +32,11 @@ public class AddCustomerPage extends BaseModel {
 
     public AddCustomerPage fillOutForm(String firstName, String lastName, String email,
                                        String message, String telePhone) throws InterruptedException {
+        getWait();
         inputFirstName.sendKeys(firstName);
-        Thread.sleep(500);
         inputLastName.sendKeys(lastName);
         inputEmail.sendKeys(email);
         inputMessage.sendKeys(message);
-        Thread.sleep(900);
         inputTelePhoneNo.sendKeys(telePhone);
 
         return new AddCustomerPage(getDriver());
